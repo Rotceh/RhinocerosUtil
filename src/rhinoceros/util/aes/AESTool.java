@@ -20,6 +20,8 @@ import Decoder.BASE64Decoder;
 import Decoder.BASE64Encoder;
 
 public class AESTool {
+	private String key = "Weber&Jimmy@2020";
+	
     /*
      * 加密
      * @param sSrc 明文
@@ -130,9 +132,12 @@ public class AESTool {
         }
     }
 
-    // 主程式
+    public String getKey() {
+		return key;
+	}
+
+	// 主程式
     public static void main(String[] args) throws Exception {
-        String key = "Weber&Jimmy@2020"; // 金鑰
         Scanner scanner = new Scanner(System.in); // scanner reads block of input
         AESTool aesTool = new AESTool();
         String input = null;
@@ -150,11 +155,11 @@ public class AESTool {
                 }
 
                 if (input.equalsIgnoreCase("1")) {
-                    aesTool.decryptTool(key);
+                    aesTool.decryptTool(aesTool.getKey());
                 }
 
                 if (input.equalsIgnoreCase("2")) {
-                    aesTool.decrypt(key);
+                    aesTool.decrypt(aesTool.getKey());
                 }
             } else {
                 System.out.println("re-enter the function code 1/2 or exit:");
