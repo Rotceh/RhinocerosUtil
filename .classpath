@@ -12,5 +12,5 @@
 	<classpathentry kind="lib" path="C:/mylib/jtstand-editor-1.5.13.jar"/>
 	<classpathentry kind="lib" path="C:/mylib/jboss-logging-3.3.0.Final.jar"/>
 	<classpathentry kind="lib" path="C:/mylib/sun.misc.BASE64Decoder.jar"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="build/classes"/>
 </classpath>
