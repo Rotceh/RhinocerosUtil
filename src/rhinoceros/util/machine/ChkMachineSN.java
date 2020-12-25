@@ -56,6 +56,7 @@ public class ChkMachineSN {
 
 				fw.write(vbs);
 				fw.close();
+				System.out.println(file.getPath());
 				Process p = Runtime.getRuntime().exec("cscript //NoLogo " + file.getPath());
 				BufferedReader input = new BufferedReader(new InputStreamReader(p.getInputStream()));
 				String line;
