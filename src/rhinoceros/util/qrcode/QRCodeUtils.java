@@ -134,11 +134,12 @@ public class QRCodeUtils {
 			path.mkdirs();
 		}
 		// 路徑後補充斜杠
-		if (filePath.lastIndexOf("\\") != filePath.length() - 1) {
-			filePath = filePath + "\\";
+		if (filePath.lastIndexOf("/") != filePath.length() - 1) {
+			filePath = filePath + "/";
 		}
 		// 組合為圖片生成的全路徑
 		String fileFullPath = filePath + fileName + "." + formatName;
+
 		boolean result = false;
 		try {
 			// 輸出圖片文件到指定位置
